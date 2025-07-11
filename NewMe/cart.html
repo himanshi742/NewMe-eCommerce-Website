@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - NewMe</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?
+    family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href= "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+ 
+    <div class="container">
+        <div class="navbar">
+        <div class="logo">
+            <img src="C:\Users\dell\OneDrive\Desktop\NewMe\images\newmelogo.jpeg" width="125px">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="file:///C:/Users/dell/OneDrive/Desktop/NewMe/index.html">Home</a></li>
+                <li><a href="file:///C:/Users/dell/OneDrive/Desktop/NewMe/product.html">Products</a></li>
+                <li><a href="file:///C:/Users/dell/OneDrive/Desktop/NewMe/About.html">About</a></li>
+                <li><a href="file:///C:/Users/dell/OneDrive/Desktop/NewMe/Contact.html">Contact</a></li>
+                <li><a href="file:///C:/Users/dell/OneDrive/Desktop/NewMe/Account.html">Account</a></li>
+            </ul>
+        </nav>
+        <img src="C:\Users\dell\OneDrive\Desktop\NewMe\images\cart.png" width="30px" height="30px">
+        <img src="C:\Users\dell\OneDrive\Desktop\NewMe\images\menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+    </div>
+
+    <!----------------cart item------------>
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Products</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="C:\Users\dell\OneDrive\Desktop\NewMe\images\buy-1.jpg">
+                        <div>
+                            <p>Red Printed Tshirt</p>
+                            <small>Price: $50.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value= "1"></td>
+                <td>$50.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="C:\Users\dell\OneDrive\Desktop\NewMe\images\crocs3.webp">
+                        <div>
+                            <p>Comfy Platform Crocs</p>
+                            <small>Price: $130.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value= "1"></td>
+                <td>$130.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="C:\Users\dell\OneDrive\Desktop\NewMe\images\product 1.webp">
+                        <div>
+                            <p>Black BodyCon Dress</p>
+                            <small>Price: $1880.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value= "1"></td>
+                <td>$1880.00</td>
+            </tr>
+        </table>
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>$2,060</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>$35.00</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>$2,095</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+<!--------------footer---------------->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our app</h3>
+                <p>Download app for android and ios mobile phones</p>
+                <div class="app-logo">
+                    <img src="C:\Users\dell\OneDrive\Desktop\NewMe\images\play-store.png">
+                    <img src="C:\Users\dell\OneDrive\Desktop\NewMe\images\app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="C:\Users\dell\OneDrive\Desktop\NewMe\images\newmelogo.jpeg">
+                <p>Our primary purpose is to be a platform for a fast-fashion, direct-to-consumer brand targeting Gen Z women, 
+                    offering affordable and trendy clothing. It aims to
+                     provide a seamless online shopping experience, 
+                     showcasing a wide variety of styles and designs, 
+                     and fostering self-expression through fashion.  </p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog posts</li>
+                    <li>Return policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="CopyRight">CopyRight 2025</p>
+    </div>
+</div>
+
+<!-- ------------------js for toggle menu----------- -->
+ <script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else{
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+ </script>
+</body>
+</html>

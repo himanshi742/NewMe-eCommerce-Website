@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | NewMe</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: #fdfdfd;
+    }
+
+    .contact-header {
+      background: radial-gradient(#fff, #ffd6df);
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .contact-header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      color: #ff523b;
+    }
+
+    .contact-header p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .contact-form, .contact-info {
+      flex: 1 1 400px;
+      margin: 20px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      animation: fadeIn 1s ease;
+    }
+
+    .contact-form h2,
+    .contact-info h2 {
+      color: #ff523b;
+      margin-bottom: 20px;
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 500;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    .contact-form button {
+      padding: 12px 25px;
+      background-color: #ff523b;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #e04b32;
+    }
+
+    .contact-info p {
+      line-height: 1.6;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .contact-container {
+        flex-direction: column;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <div class="contact-header">
+    <div class="navbar">
+        <div class="logo">
+            <img src="C:\Users\dell\OneDrive\Desktop\NewMe\images\newmelogo.jpeg" width="125px">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Account.html">Account</a></li>
+            </ul>
+        </nav>
+        <img src="C:\Users\dell\OneDrive\Desktop\NewMe\images\cart.png" width="30px" height="30px">
+        <img src="C:\Users\dell\OneDrive\Desktop\NewMe\images\menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+    <h1>Contact Us</h1>
+    <p>Have questions? We’d love to hear from you.</p>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="contact-container">
+    <!-- Form -->
+    <div class="contact-form">
+      <h2>Send us a message</h2>
+      <form action="#" method="post">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h2>Reach Us At</h2>
+      <p><strong>Email:</strong> support@newme.com</p>
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+      <p><strong>Address:</strong> 123, Fashion Street, Ahmedabad, Gujarat - 380001</p>
+      <p><strong>Hours:</strong> Mon – Fri, 10 AM – 6 PM</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 NewMe. All rights reserved.</p>
+  </footer>
+
+  <!-- JS Menu Toggle -->
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle() {
+      if (MenuItems.style.maxHeight === "0px") {
+        MenuItems.style.maxHeight = "200px";
+      } else {
+        MenuItems.style.maxHeight = "0px";
+      }
+    }
+  </script>
+
+</body>
+</html>

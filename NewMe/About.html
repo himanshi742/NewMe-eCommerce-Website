@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us | NewMe</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    .about-header {
+      background: radial-gradient(#fff, #ffd6df);
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .about-header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      color: #ff523b;
+    }
+
+    .about-header p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    .about-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    .about-image {
+      flex: 1 1 400px;
+      padding: 20px;
+      animation: fadeInLeft 1s ease;
+    }
+
+    .about-image img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .about-text {
+      flex: 1 1 500px;
+      padding: 20px;
+      animation: fadeInRight 1s ease;
+    }
+
+    .about-text h2 {
+      color: #ff523b;
+      margin-bottom: 10px;
+    }
+
+    .about-text p {
+      margin: 10px 0;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .about-text ul {
+      margin: 10px 0;
+      padding-left: 20px;
+    }
+
+    .about-text ul li {
+      line-height: 1.6;
+      color: #333;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    @keyframes fadeInLeft {
+      from { opacity: 0; transform: translateX(-50px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes fadeInRight {
+      from { opacity: 0; transform: translateX(50px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    @media (max-width: 768px) {
+      .about-content {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <div class="about-header">
+    <div class="navbar">
+        <div class="logo">
+            <img src="C:\Users\dell\OneDrive\Desktop\NewMe\images\newmelogo.jpeg" width="125px">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="file:///C:/Users/dell/OneDrive/Desktop/NewMe/index.html">Home</a></li>
+                <li><a href="file:///C:/Users/dell/OneDrive/Desktop/NewMe/product.html">Products</a></li>
+                <li><a href="file:///C:/Users/dell/OneDrive/Desktop/NewMe/About.html">About</a></li>
+                <li><a href="file:///C:/Users/dell/OneDrive/Desktop/NewMe/Contact.html">Contact</a></li>
+                <li><a href="file:///C:/Users/dell/OneDrive/Desktop/NewMe/Account.html">Account</a></li>
+            </ul>
+        </nav>
+        <img src="C:\Users\dell\OneDrive\Desktop\NewMe\images\cart.png" width="30px" height="30px">
+        <img src="C:\Users\dell\OneDrive\Desktop\NewMe\images\menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+    <h1>About NewMe</h1>
+    <p>Where style meets confidence and innovation</p>
+  </div>
+
+  <!-- About Content -->
+  <div class="about-content">
+    <div class="about-image">
+      <img src="C:\Users\dell\OneDrive\Desktop\NewMe\images\team.webp" alt="Our Team">
+    </div>
+    <div class="about-text">
+      <h2>Our Story</h2>
+      <p>NewMe is an online fashion destination that empowers individuals to express their unique style through affordable and trend-forward clothing. We started with a passion for creativity and a belief that fashion should be inclusive, accessible, and expressive.</p>
+
+      <h2>Our Mission</h2>
+      <p>To offer stylish, quality apparel that inspires confidence and comfort — all while delivering an exceptional shopping experience.</p>
+
+      <h2>What We Offer</h2>
+      <ul>
+        <li>Women's & Men's Fashion Collections</li>
+        <li>Affordable Lifestyle Accessories</li>
+        <li>Fast & Secure Shipping</li>
+        <li>Responsive Customer Support</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 NewMe. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
